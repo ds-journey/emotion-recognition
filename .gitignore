@@ -3,3 +3,4 @@ emotion-recognition/README.md
 emotion-recognition/.gitignore
 server/server
 server/__pycache__
+/.DS_Store
