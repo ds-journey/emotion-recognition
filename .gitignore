@@ -1,6 +1,4 @@
-emotion-recognition/node_modules
-emotion-recognition/README.md
-emotion-recognition/.gitignore
+frontend/node_modules
 server/server
 server/__pycache__
-/.DS_Store
+**/.DS_Store
