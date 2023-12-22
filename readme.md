@@ -31,3 +31,24 @@ Frontend отправляет захваченное изображение в b
    - Модель возвращаеет вероятностною оценку определения эмоций.
 4. Tensorflow JS.
    - Обнаружение лиц на изображении с помощью архитектуры Single Shot Detector с пользовательским модели Blazeface.
+
+#### Запуск проекта
+
+```bash
+# установка зависимостей
+$ cd server
+$ pip install -r requirements.txt
+```
+
+```bash
+# запуск серверной части
+$ cd server
+$ uvicorn main:app --reload
+```
+
+```bash
+# запуск фронтенда
+$ cd frontend
+$ npm install
+$ npm start
+```
