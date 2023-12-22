@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./App.css";
 
-import * as tf from "@tensorflow/tfjs";
 import Webcam from "react-webcam";
 import { drawMesh } from "./utilities";
 
@@ -100,7 +99,6 @@ function App() {
             position: "absolute",
             marginLeft: "auto",
             marginRight: "auto",
-            left: 0,
             left: 100,
             top: 60,
             textAlign: "center",
@@ -116,7 +114,6 @@ function App() {
           position: "absolute",
           marginLeft: "auto",
           marginRight: "auto",
-          left: 0,
           left: 100,
           top: 60,
           textAlign: "center",
@@ -124,7 +121,21 @@ function App() {
           width: 640,
           height: 480,
         }}
-      ></canvas>
+      >
+        <input
+          id="emotion_text"
+          name="emotion_text"
+          vale="Neutral"
+          style={{
+            position: "absolute",
+            width: 200,
+            height: 50,
+            top: 580,
+            left: 300,
+            "font-size": "30px",
+          }}
+        ></input>
+      </canvas>
 
       <div>
         <div
