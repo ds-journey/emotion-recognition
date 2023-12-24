@@ -23,7 +23,7 @@
 Обучение нейронной сети выполнено на основе [набора данных Kaggle](https://www.kaggle.com/datasets/sujaykapadnis/emotion-recognition-dataset).  
 
 Для запуска [jupyter-ноутбука](./hackaton.ipynb), выполняющего обучение
-модели, его необходимо скачать и распаковать в директорию с ноутбуком.  
+модели, его необходимо скачать и распаковать.  
 
 Обученные модели сохраняются, начиная с 15й эпохи, в папку `~/data/torch`,
 её необходимо создать заранее.  
@@ -47,3 +47,25 @@ Frontend отправляет захваченное изображение в b
    - Модель возвращаеет вероятностною оценку определения эмоций.
 4. Tensorflow JS.
    - Обнаружение лиц на изображении с помощью архитектуры Single Shot Detector с пользовательским модели Blazeface.
+
+#### Запуск проекта
+
+```bash
+# установка зависимостей
+$ cd server
+$ pip install -r requirements.txt
+```
+
+```bash
+# запуск серверной части
+$ cd server
+$ export MODEL_FILE=<your_model_file> # путь к файлу модели. Например, в системе Linux так: export MODEL_FILE=/some/path/to/your/model_file.th.
+$ uvicorn main:app --reload
+```
+
+```bash
+# запуск фронтенда
+$ cd frontend
+$ npm install
+$ npm start
+```
