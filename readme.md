@@ -8,8 +8,6 @@
 
 [Презентация](https://docs.google.com/presentation/d/1yVbJ60xvV-22vY7_-OZg9CvfXkGqkyXmOQSeiGXTPAg/edit#slide=id.g2a9ea32881b_1_91)
 
-[Оригинальный проект](https://github.com/victor369basu/facial-emotion-recognition)
-
 #### Предлагаемое решение
 
 Для реализации цели предлагается приложение по распознаванию эмоций
@@ -53,12 +51,14 @@
 2. [/server](https://github.com/ds-journey/emotion-recognition/tree/main/server) - исходный код серверной части приложения.
 3. [ноутбук с обучением модели](https://github.com/ds-journey/emotion-recognition/blob/main/hackaton.ipynb)
 
-#### Архитектура
+#### Архитектура web-приложения
 
 Приложения состоит из двух частей: frontend(приложение на react.js) и backend(серверная часть, разработанная с использованием fastAPI). Части общаются между собой посредством WebSocket.
 Frontend отправляет захваченное изображение в backend и получает в ответ оценку "предсказания" эмоции.
 
 Ответ бэкэнда состоит из двух ключей "predictions" и "emotion". Ключ "prediction" состоит из вероятностей "предсказания" каждой эмоции, которые используются для изменения значений шкалы эмоций с каждым кадром. Ключ "emotion" содержит доминирующую эмоцию, которая используется для динамического изменения цвета границы, определенной вокруг человеческого лица. Область вокруг лица определяется с помощью модели TensorflowJS.
+
+[Оригинальный проект](https://github.com/victor369basu/facial-emotion-recognition)
 
 #### Используемые технологии и библиотеки
 1. ReactJS.
