@@ -44,6 +44,11 @@
 
 4. Анализ данных: Собранные данные об эмоциях посетителей помогут музею лучше понять, какие экспонаты и мероприятия вызывают наибольший интерес, что позволит оптимизировать экспозицию и программу мероприятий.
 
+#### Структура проекта
+1. [/frontend](https://github.com/ds-journey/emotion-recognition/tree/main/frontend) - исходный код браузерного приложения.
+2. [/server](https://github.com/ds-journey/emotion-recognition/tree/main/server) - исходный код серверной части приложения.
+3. [ноутбук с обучением модели](https://github.com/ds-journey/emotion-recognition/blob/main/hackaton.ipynb)
+
 #### Архитектура
 
 Приложения состоит из двух частей: frontend(приложение на react.js) и backend(серверная часть, разработанная с использованием fastAPI). Части общаются между собой посредством WebSocket.
