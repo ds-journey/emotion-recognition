@@ -7,6 +7,7 @@
 Цель проекта — сделать посещение людьми музеев, городов или новых мест интересным, информативным и комфортным.
 
 [Презентация](https://docs.google.com/presentation/d/1yVbJ60xvV-22vY7_-OZg9CvfXkGqkyXmOQSeiGXTPAg/edit#slide=id.g2a9ea32881b_1_91)
+
 [Оригинальный проект](https://github.com/victor369basu/facial-emotion-recognition)
 
 #### Предлагаемое решение
